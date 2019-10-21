@@ -156,6 +156,14 @@
                     <navigationItem key="navigationItem" title="Gerador de Senhas" id="ClW-uW-tzJ">
                         <barButtonItem key="backBarButtonItem" title="Gerador de Senhas" id="IYR-DD-dvn"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="swCapitalLetters" destination="swO-ow-tqc" id="UmB-BQ-s99"/>
+                        <outlet property="swLetters" destination="iqm-KJ-Evz" id="pJn-mf-teD"/>
+                        <outlet property="swNumbers" destination="sga-51-gw2" id="Vns-6G-amw"/>
+                        <outlet property="swSpecialLetters" destination="vXE-Ok-QJK" id="5zY-6k-2lX"/>
+                        <outlet property="tfNumberOfCharacters" destination="sVj-M0-oKP" id="5eX-7f-cfH"/>
+                        <outlet property="tfTotalPasswords" destination="a7f-xV-WJd" id="7Oz-kG-CQ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +172,7 @@
         <!--Lista de Senhas-->
         <scene sceneID="hEi-F5-vfl">
             <objects>
-                <viewController id="cy4-cx-lfy" sceneMemberID="viewController">
+                <viewController id="cy4-cx-lfy" customClass="PasswordsViewController" customModule="myPassword" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rya-TU-i0a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,6 +195,9 @@
                                 <state key="normal" title="Gerar novamente">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="generate:" destination="cy4-cx-lfy" eventType="touchUpInside" id="FDn-T0-A7y"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="99999" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rzu-We-h6l">
                                 <rect key="frame" x="16" y="118" width="343" height="421"/>
@@ -211,15 +222,18 @@
                         <viewLayoutGuide key="safeArea" id="o7E-o7-acx"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lista de Senhas" id="8k2-vK-5EU"/>
+                    <connections>
+                        <outlet property="tvPasswords" destination="rzu-We-h6l" id="jyn-sC-gNd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNc-Vv-jiQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1936.8" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--Security Tips View Controller-->
         <scene sceneID="ZaB-Nc-X9K">
             <objects>
-                <viewController id="ltX-fl-N4P" sceneMemberID="viewController">
+                <viewController id="ltX-fl-N4P" customClass="SecurityTipsViewController" customModule="myPassword" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2eF-pU-921">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,11 +249,14 @@
                                 <state key="normal" title="fechar">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="closeTips:" destination="ltX-fl-N4P" eventType="touchUpInside" id="CHZ-Fd-NSc"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5bK-5y-u87">
                                 <rect key="frame" x="16" y="64" width="343" height="529"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">1. Escolha senhas fáceis de lembrar 
+                                <string key="text">1. Escolha senhas fáceis de lembrar 
 Uma senha fácil de guardar na memória evita que o usuário tenha que anotá-la em papeis ou arquivos, que podem chegar às mãos de pessoas erradas.
 
 2. Não use palavras reais 
@@ -267,7 +284,7 @@ Esse procedimento evita possíveis fraudes. Ao abrir links suspeitos, o usuário
 Muitos ataques podem ser evitados ao ativar serviços básicos de proteção na internet dos antivírus.
 
 10.  Se você achar que é difícil lembrar-se de várias senhas complexas, considere a instalação de um gerenciadores de senhas 
-Há diversos programas disponíveis que armazenam os dados de maneira segura e ajudam os mais esquecidos.</mutableString>
+Há diversos programas disponíveis que armazenam os dados de maneira segura e ajudam os mais esquecidos.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
