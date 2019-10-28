@@ -10,11 +10,11 @@
 		FF3E72BF235D39D600F860B2 /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E72BE235D39D600F860B2 /* PasswordsViewController.swift */; };
 		FF3E72C1235D3C0300F860B2 /* SecurityTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E72C0235D3C0300F860B2 /* SecurityTipsViewController.swift */; };
 		FF3E72C3235D3D6600F860B2 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E72C2235D3D6600F860B2 /* PasswordGenerator.swift */; };
+		FF3E72C52366854000F860B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3E72C42366854000F860B2 /* Assets.xcassets */; };
 		FF9371172354043300B1112D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9371162354043300B1112D /* AppDelegate.swift */; };
 		FF9371192354043300B1112D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9371182354043300B1112D /* SceneDelegate.swift */; };
 		FF93711B2354043300B1112D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93711A2354043300B1112D /* ViewController.swift */; };
 		FF93711E2354043300B1112D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF93711C2354043300B1112D /* Main.storyboard */; };
-		FF9371202354043600B1112D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF93711F2354043600B1112D /* Assets.xcassets */; };
 		FF9371232354043600B1112D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9371212354043600B1112D /* LaunchScreen.storyboard */; };
 		FF93712E2354043600B1112D /* myPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93712D2354043600B1112D /* myPasswordTests.swift */; };
 		FF9371392354043600B1112D /* myPasswordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9371382354043600B1112D /* myPasswordUITests.swift */; };
@@ -41,12 +41,12 @@
 		FF3E72BE235D39D600F860B2 /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
 		FF3E72C0235D3C0300F860B2 /* SecurityTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipsViewController.swift; sourceTree = "<group>"; };
 		FF3E72C2235D3D6600F860B2 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		FF3E72C42366854000F860B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		FF9371132354043300B1112D /* myPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9371162354043300B1112D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9371182354043300B1112D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF93711A2354043300B1112D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF93711D2354043300B1112D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF93711F2354043600B1112D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF9371222354043600B1112D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF9371242354043600B1112D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9371292354043600B1112D /* myPasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myPasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,9 +112,9 @@
 				FF3E72C0235D3C0300F860B2 /* SecurityTipsViewController.swift */,
 				FF3E72BE235D39D600F860B2 /* PasswordsViewController.swift */,
 				FF93711C2354043300B1112D /* Main.storyboard */,
-				FF93711F2354043600B1112D /* Assets.xcassets */,
 				FF9371212354043600B1112D /* LaunchScreen.storyboard */,
 				FF9371242354043600B1112D /* Info.plist */,
+				FF3E72C42366854000F860B2 /* Assets.xcassets */,
 			);
 			path = myPassword;
 			sourceTree = "<group>";
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9371232354043600B1112D /* LaunchScreen.storyboard in Resources */,
-				FF9371202354043600B1112D /* Assets.xcassets in Resources */,
+				FF3E72C52366854000F860B2 /* Assets.xcassets in Resources */,
 				FF93711E2354043300B1112D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

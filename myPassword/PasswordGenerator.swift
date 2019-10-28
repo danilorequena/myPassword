@@ -55,8 +55,8 @@ class PasswordGenerator {
         
         let universeArray = Array(universe)
         while passwords.count < total {
+            var password = ""
             for _ in 1...numberOfCharacters {
-                var password = ""
                 let index = Int(arc4random_uniform(UInt32(universeArray.count)))
                 password += String(universeArray[index])
             }
