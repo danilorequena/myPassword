@@ -97,16 +97,12 @@
                                     <segue destination="cy4-cx-lfy" kind="show" id="cAr-46-fLu"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="Ywt-aN-VW4">
-                                <rect key="frame" x="101.5" y="457" width="172.5" height="210"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vXE-Ok-QJK" firstAttribute="centerY" secondItem="YMe-yM-XZR" secondAttribute="centerY" id="08H-5t-u8g"/>
                             <constraint firstItem="sga-51-gw2" firstAttribute="leading" secondItem="fNo-3H-AYB" secondAttribute="trailing" constant="8" id="1xQ-6K-ggR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sVj-M0-oKP" secondAttribute="trailing" constant="24" id="2iZ-Kr-S9t"/>
-                            <constraint firstItem="Ywt-aN-VW4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2qb-QX-F5G"/>
                             <constraint firstItem="swO-ow-tqc" firstAttribute="leading" secondItem="A2C-NR-AWY" secondAttribute="trailing" constant="8" id="3BH-aC-lOH"/>
                             <constraint firstItem="vXE-Ok-QJK" firstAttribute="leading" secondItem="YMe-yM-XZR" secondAttribute="trailing" constant="8" id="3he-NX-9Zt"/>
                             <constraint firstItem="swO-ow-tqc" firstAttribute="centerY" secondItem="A2C-NR-AWY" secondAttribute="centerY" id="6Za-L7-LEq"/>
@@ -145,7 +141,6 @@
                             <constraint firstItem="2BK-lR-UCJ" firstAttribute="top" secondItem="ZFX-wP-lNG" secondAttribute="bottom" constant="16" id="nb7-PV-Rk8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DeW-tj-RkZ" secondAttribute="trailing" constant="24" id="odK-U1-DQm"/>
                             <constraint firstItem="fNo-3H-AYB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="pn8-xg-PdX"/>
-                            <constraint firstItem="Ywt-aN-VW4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sg4-Gr-HWs"/>
                             <constraint firstItem="vXE-Ok-QJK" firstAttribute="leading" secondItem="YMe-yM-XZR" secondAttribute="trailing" constant="8" id="x6f-hd-s4i"/>
                             <constraint firstItem="YMe-yM-XZR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="xPI-3t-i1S"/>
                             <constraint firstItem="DeW-tj-RkZ" firstAttribute="top" secondItem="vXE-Ok-QJK" secondAttribute="bottom" constant="20" id="yeL-Hz-VvX"/>
@@ -316,7 +311,7 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lGk-UJ-WrK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -328,7 +323,4 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
             <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="lock" width="172.5" height="210"/>
-    </resources>
 </document>
